@@ -1,0 +1,14 @@
+#include <stdlib.h>
+
+void f (void)
+{
+    int *i= malloc(10*sizeof(int));
+    i[9]=0;
+    free(i);
+}
+
+int main(void)
+{
+    f();
+    return 0;
+}
